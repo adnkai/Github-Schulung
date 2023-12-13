@@ -1,0 +1,84 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "adminUsername": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the admin user."
+            }
+        },
+        "adminPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "Password for the admin user."
+            }
+        },
+        "vmName": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the virtual machine."
+            }
+        },
+        "disk1Name": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the first disk."
+            }
+        },
+        "disk2Name": {
+            "type": "string",
+            "metadata": {
+                "description": "Name of the second disk."
+            }
+        }
+    },
+    "resources": [
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2021-03-01",
+            "name": "[parameters('vmName')]",
+            "location": "[resourceGroup().location]",
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "Standard_DS2_v2"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "MicrosoftWindowsServer",
+                        "offer": "WindowsServer",
+                        "sku": "2019-Datacenter",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "createOption": "FromImage"
+                    },
+                    "dataDisks": [
+                        {
+                            "name": "[parameters('disk1Name')]",
+                            "diskSizeGB": 128,
+                            "createOption": "Empty"
+                        },
+                        {
+                            "name": "[parameters('disk2Name')]",
+                            "diskSizeGB": 256,
+                            "createOption": "Empty"
+                        }
+                    ]
+                },
+                "osProfile": {
+                    "computerName": "[parameters('vmName')]",
+                    "adminUsername": "[parameters('adminUsername')]",
+                    "adminPassword": "[parameters('adminPassword')]"
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', 'nicName')]"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
