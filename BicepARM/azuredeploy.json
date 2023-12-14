@@ -1,12 +1,20 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
+    "variables": {
+        "adminUsername":"robertgeiss",
+        "vmName": "myVM",
+        "disk01name": "disk01",
+        "disk02name": "disk02"
+        
+    },
     "parameters": {
         "adminUsername": {
             "type": "string",
             "metadata": {
                 "description": "Name of the admin user."
-            }
+            },
+            "defaultValue": "[variables('adminUsername')]"
         },
         "adminPassword": {
             "type": "securestring",
@@ -18,19 +26,22 @@
             "type": "string",
             "metadata": {
                 "description": "Name of the virtual machine."
-            }
+            },
+            "defaultValue": "[variables('vmName')]"
         },
         "disk1Name": {
             "type": "string",
             "metadata": {
                 "description": "Name of the first disk."
-            }
+            },
+            "defaultValue": "[variables('disk01name')]"
         },
         "disk2Name": {
             "type": "string",
             "metadata": {
                 "description": "Name of the second disk."
-            }
+            },
+            "defaultValue": "[variables('disk02name')]"
         }
     },
     "resources": [
