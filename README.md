@@ -4,8 +4,15 @@ Was ist eigentlich dieses GitHub?
 
 
 <details>
-<summary>Click to expand</summary>
+  <summary>stuff with *mark* **down**</summary>
+  <p>
 
-whatever
+    ## _formatted_ **heading** with [a](link)
 
+    ---
+    {{standard 3-backtick code block omitted from here due to escaping issues}}
+    ---
+
+    Collapsible until here.
+  </p>
 </details>
