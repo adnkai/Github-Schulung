@@ -10,7 +10,7 @@ Was ist eigentlich dieses GitHub?
 ## _formatted_ **heading** with [a](link)
 
 ---
-{{standard 3-backtick code block omitted from here due to escaping issues}}
+```Standard 3-backtick code block omitted from here due to escaping issues}}```
 ---
 
 Collapsible until here.
