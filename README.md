@@ -7,12 +7,12 @@ Was ist eigentlich dieses GitHub?
   <summary>stuff with *mark* **down**</summary>
   <p>
 
-    ## _formatted_ **heading** with [a](link)
+## _formatted_ **heading** with [a](link)
 
-    ---
-    {{standard 3-backtick code block omitted from here due to escaping issues}}
-    ---
+---
+{{standard 3-backtick code block omitted from here due to escaping issues}}
+---
 
-    Collapsible until here.
+Collapsible until here.
   </p>
 </details>
