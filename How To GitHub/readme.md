@@ -3,9 +3,9 @@
 In diesem Verzeichnis erkläre ich euch, wie ihr euch elativ schnell in die Lage versetzen könnt mit Git und GitHub zu arbeiten.
 
 - ToDo's
-  - [GitHub Account erstellen](#GitHubAccounterstellen)
-  - [Git Installation](#GitInstallation)
-  - [Visual Studio Code Editor](#VisualStudioCodeEditor) (@Andre: notepad geht auch)
+  - [GitHub Account erstellen](#GitHub-Account-erstellen)
+  - [Git Installation](#Git-Installation)
+  - [Visual Studio Code Editor](#Visual-Studio-Code-Editor) (@Andre: notepad geht auch)
 
 
 ## GitHub Account erstellen
@@ -30,6 +30,8 @@ Hier eine Screenshot-Kette mit den Standardeinstellunen.
 ![11](../Bilder/Git-Installation-11.png) <br>
 ![12](../Bilder/Git-Installation-12.png) <br>
 ![13](../Bilder/Git-Installation-13.png) <br>
+
+Nach der Installation müsst ihr ggf. eure Explorer-Fenster und alle Terminals/CMDs schließen. Das leidige Thema der Windows Umgebungsvariablen.
 
 
 ## Repositories
