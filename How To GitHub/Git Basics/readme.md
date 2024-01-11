@@ -52,32 +52,32 @@ Hier eine Visualisierung zu diesem Prozess:
 # Buzzwords
 
 ### Branch
-```mermaid;
-gitGraph;
-  checkout main;
-  commit;
-  branch TEST;
-  branch DEV;
-  checkout DEV;
-  commit;
-  commit;
-  checkout TEST;
-  merge DEV;
-  checkout DEV;
-  commit;
-  commit;
-  checkout main;
-  merge TEST;
-  checkout DEV;
-  commit;
-  checkout TEST;
-  merge DEV;
-  checkout DEV;
-  commit;
-  checkout main;
-  merge TEST;
-  checkout DEV;
-  commit;
+```mermaid
+gitGraph
+  checkout main
+  commit
+  branch TEST
+  branch DEV
+  checkout DEV
+  commit
+  commit
+  checkout TEST
+  merge DEV
+  checkout DEV
+  commit
+  commit
+  checkout main
+  merge TEST
+  checkout DEV
+  commit
+  checkout TEST
+  merge DEV
+  checkout DEV
+  commit
+  checkout main
+  merge TEST
+  checkout DEV
+  commit
 ```
 ### Index
 ### Working Tree
