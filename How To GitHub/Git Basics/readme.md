@@ -52,7 +52,7 @@ Hier eine Visualisierung zu diesem Prozess:
 # Buzzwords
 
 ### Branch
-```mermaid
+```mermaid;
 gitGraph;
   checkout main;
   commit;
