@@ -49,6 +49,28 @@ Hier eine Visualisierung zu diesem Prozess:
 
 ![commit](/Bilder/Commit-ablauf-01.PNG)
 
+### git push
+Das Remote Repository (idR. GitHub) mit lokalen Änderungen aktualisieren.
+Lädt unsere Dateien aus der Staging-Area (git commit) hoch.
+Das Remote Repository muss selbstverständlich existieren...<br> 
+Sofern das Repository zuvor mit `git clone` kopiert wurde, sollte alles funktionieren.
+Ggf. kommt eine Fehlermeldung, die sich jedoch leicht beheben lässt.
+
+Fehlermeldung:
+![01](/Bilder/Git-Config-UserInfo-01.PNG)<br>
+Fehlerbehebung:
+![02](/Bilder/Git-Config-UserInfo-02.PNG)<br>
+
+### git pull
+Das lokale Repository mit den Daten aus dem Remote Repository aktualisieren.
+Dies sollte (idR) immer der erste Befehl sein, den wir ausführen, bevor wir etwas an unseren Dateien verändern (Danke, Tobias!).
+
+## Erweiterte Szenarien
+(in Arbeit)
+
+### git branch
+### git merge
+
 # Buzzwords
 
 ### Branch
@@ -80,7 +102,12 @@ gitGraph
   commit
 ```
 ### Index
+Der Index ist in der Regel der aktive Branch. HEAD zeigt (meist) auf den Index.
 ### Working Tree
-oder `Staging Area`
+oder `Staging Area` ist ein Abbild des aktuellen Arbeitsverzeichnisses. Im Grunde also unser Branch nach einem `git add`.
 ### Commit
+Das Hinzufügen unserer Änderungen zur Historie. Erstellen einer neuen Version (SHA hash) und verschieben des HEAD-Pointers auf den neuen hash.
 ### Detached Head
+Erweitertes Szenario. Diese vermeintliche Fehlermeldung erscheint hauptsächlich, wenn ihr euch mit `git checkout` in eurer Historie bewegt. Beispielsweise, wenn ihr _in die Vergangenheit schauen_ wollt.
+
+Sofern ihr in diesem Status keine Dateien verändert, könnt ihr das _Problem_ ganz einfach mit `git checkout main` lösen.
