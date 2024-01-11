@@ -16,20 +16,17 @@ Der GitHub Account ist das Portal für alle eure [Repositories](#Repositories). 
 ## Git Installation
 Besucht [git-scm](https://git-scm.com/) und ladet euch den Installer für Windows herunter. Führt ihn aus.
 Hier eine Screenshot-Kette mit den Standardeinstellunen.
-
-![01](/Bilder/Git-Installation-01.PNG) <br>
-![02](/Bilder/Git-Installation-02.PNG) <br>
-![03](/Bilder/Git-Installation-03.PNG) <br>
-![04](/Bilder/Git-Installation-04.PNG) <br>
-![05](/Bilder/Git-Installation-05.PNG) <br>
-![06](/Bilder/Git-Installation-06.PNG) <br>
-![07](/Bilder/Git-Installation-07.PNG) <br>
-![08](/Bilder/Git-Installation-08.PNG) <br>
-![09](/Bilder/Git-Installation-09.PNG) <br>
-![10](/Bilder/Git-Installation-10.PNG) <br>
-![11](/Bilder/Git-Installation-11.PNG) <br>
-![12](/Bilder/Git-Installation-12.PNG) <br>
-![13](/Bilder/Git-Installation-13.PNG) <br>
+|1|2|3|
+|-|-|-|
+|![02](/Bilder/Git-Installation-02.PNG) | ![01](/Bilder/Git-Installation-01.PNG) | ![03](/Bilder/Git-Installation-03.PNG) 
+|4|5|6|
+|![04](/Bilder/Git-Installation-04.PNG) | ![05](/Bilder/Git-Installation-05.PNG) | ![06](/Bilder/Git-Installation-06.PNG) |
+|7|8|9|
+|![07](/Bilder/Git-Installation-07.PNG) | ![08](/Bilder/Git-Installation-08.PNG) | ![09](/Bilder/Git-Installation-09.PNG) |
+|10|11|12|
+|![10](/Bilder/Git-Installation-10.PNG) | ![11](/Bilder/Git-Installation-11.PNG) | ![12](/Bilder/Git-Installation-12.PNG) |
+|13| | |
+|![13](/Bilder/Git-Installation-13.PNG) 
 
 Nach der Installation müsst ihr ggf. eure Explorer-Fenster und alle Terminals/CMDs schließen. Das leidige Thema der Windows Umgebungsvariablen.
 
