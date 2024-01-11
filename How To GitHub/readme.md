@@ -17,7 +17,7 @@ Der GitHub Account ist das Portal für alle eure [Repositories](#Repositories). 
 Besucht [git-scm](https://git-scm.com/) und ladet euch den Installer für Windows herunter. Führt ihn aus.
 Hier eine Screenshot-Kette mit den Standardeinstellunen.
 
-![01](../Bilder/Git-Installation-01.png) <br>
+![01]("../Bilder/Git-Installation-01.png") <br>
 ![02](../Bilder/Git-Installation-02.png) <br>
 ![03](../Bilder/Git-Installation-03.png) <br>
 ![04](../Bilder/Git-Installation-04.png) <br>
