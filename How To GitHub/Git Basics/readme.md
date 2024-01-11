@@ -52,16 +52,35 @@ Hier eine Visualisierung zu diesem Prozess:
 # Buzzwords
 
 ### Branch
+```mermaid
+gitGraph;
+  checkout main;
+  commit;
+  branch TEST;
+  branch DEV;
+  checkout DEV;
+  commit;
+  commit;
+  checkout TEST;
+  merge DEV;
+  checkout DEV;
+  commit;
+  commit;
+  checkout main;
+  merge TEST;
+  checkout DEV;
+  commit;
+  checkout TEST;
+  merge DEV;
+  checkout DEV;
+  commit;
+  checkout main;
+  merge TEST;
+  checkout DEV;
+  commit;
+```
 ### Index
 ### Working Tree
 oder `Staging Area`
 ### Commit
 ### Detached Head
-
-```mermaid
-flowchart LR;
-A[Hard] -->|Text| B(Round);
-B --> C{Decision};
-C -->|One| D[Result 1];
-C -->|Two| E[Result 2];
-```
